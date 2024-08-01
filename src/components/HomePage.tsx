@@ -13,7 +13,8 @@ import educationImage from '../../public/images/graduation.png';
 import investigateImage from '../../public/images/searcher.png';
 import planImage from '../../public/images/roadmap.png';
 import disputeImage from '../../public/images/fight-man.png';
-import ficoCalcImage from '../../public/images/fico_calc.webp'
+import ficoCalcImage from '../../public/images/fico_calc.webp';
+import ficoEducationImage from '../../public/images/fico_education.webp';
 
 export const HomePage: React.FC<{ blogPosts: BlogPostData[] }> = ({ blogPosts }) => {
     // const { showModal, setShowModal, showSuccessMessage } = useContext(SubscribeContext)
@@ -115,12 +116,12 @@ export const HomePage: React.FC<{ blogPosts: BlogPostData[] }> = ({ blogPosts })
                         ref={featuresRef}
                         className="grid grid-cols-1 gap-24 lg:gap-36 text-white mt-12 place-content-center justify-items-center w-full">
                         <FeatureSection
-                            image={ficoCalcImage}
+                            image={ficoEducationImage}
                             heading="Why a good credit score is important"
-                            description="Understanding your credit score is essential for financial health. I offer comprehensive education on credit scoring to empower you with the knowledge needed to manage and improve your credit. Here's how I can help:"
-                            feature1="Clear Explanations: Break down complex credit concepts into easy-to-understand information."
-                            feature2="Practical Tips: Provide actionable advice for maintaining and boosting your credit score."
-                            feature3="Ongoing Support: Continuous guidance to keep you informed and on track with your credit goals."
+                            description="A strong credit score is key to unlocking financial opportunities and stability. It affects everything from loan approvals to interest rates, and even job prospects. Here's why maintaining a good credit score matters:"
+                            feature1="Better Loan Terms: Secure lower interest rates and better terms on loans and credit cards."
+                            feature2="Higher Approval Rates: Increase your chances of being approved for credit apps and rentals."
+                            feature3="Financial Security: Enhance your overall financial health and access to resources."
                         />
                         <FeatureSection
                             image={fairScoreImage}
