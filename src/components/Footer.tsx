@@ -25,7 +25,7 @@ export default function Footer() {
                             <div className="md:w-[316px]">
                                 <h2 className="text-white font-bold text-2xl">The Money Mentor</h2>
                                 <p className="mt-[18px] text-[15px] font-normal text-white/[80%]">
-                                    I'm dedicated to helping you improve your credit score and achieve your financial goals.
+                                    I&#39;m dedicated to helping you improve your credit score and achieve your financial goals.
                                     Explore our resources, expert advice, and personalized plans to take control of your credit.
                                     Contact us today to start your journey toward a brighter financial future.</p>
                                 {/* <div className="mt-[18px] flex gap-4">
