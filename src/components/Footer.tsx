@@ -23,10 +23,11 @@ export default function Footer() {
                     <div className="mx-auto w-full h-full px-4 xl:px-0">
                         <div className="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
                             <div className="md:w-[316px]">
-                                <h2 className="text-white font-bold text-2xl">Code By Andy</h2>
-                                <p className="mt-[18px] text-[15px] font-normal text-white/[80%]">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Eos, fugit non. Incidunt dolorum adipisci, tempore asperiores nemo odio facere officiis enim animi
-                                    placeat eaque nesciunt alias beatae id, at dicta.</p>
+                                <h2 className="text-white font-bold text-2xl">The Money Mentor</h2>
+                                <p className="mt-[18px] text-[15px] font-normal text-white/[80%]">
+                                    I'm dedicated to helping you improve your credit score and achieve your financial goals.
+                                    Explore our resources, expert advice, and personalized plans to take control of your credit.
+                                    Contact us today to start your journey toward a brighter financial future.</p>
                                 {/* <div className="mt-[18px] flex gap-4">
                                     <a className="hover:scale-110" target="_blank"
                                         href="#"><img alt="facebook icon" loading="lazy" width="36" height="36" decoding="async" data-nimg="1" src="https://www.englishyaari.com/img/facebook.svg" /></a><a
@@ -63,7 +64,7 @@ export default function Footer() {
                                         </svg>
                                     </div>
                                     <div className="ml-[18px]">
-                                        <a href="mailto:help@lorem.com" className="font-Inter text-[14px] font-medium text-[#fff]">help@gmail.com</a>
+                                        <a href="mailto:help@lorem.com" className="font-Inter text-[14px] font-medium text-[#fff]">ajmeier29@protonmail.com</a>
                                         <p className="font-Inter text-[12px] font-medium text-[#fff]">Email</p>
                                     </div>
                                 </div>

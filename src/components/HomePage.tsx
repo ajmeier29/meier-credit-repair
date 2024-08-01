@@ -5,12 +5,15 @@ import ContactModal from "./ContactModal";
 import Typed from 'typed.js';
 import { useEffect, useRef } from 'react';
 import { StaticImageData } from "next/image";
-import performaceImage from '../../public/images/dashboard.png';
-import seoImage from '../../public/images/statistics.png';
-import customersImage from '../../public/images/customer.png';
-import accessImage from '../../public/images/accesibility.png';
-import responsiveImage from '../../public/images/responsive.png';
-import Performance from "./Performance";
+import FeatureSection from "./FeatureSection";
+
+// Images
+import fairScoreImage from '../../public/images/fair_credit_score.png';
+import educationImage from '../../public/images/graduation.png';
+import investigateImage from '../../public/images/searcher.png';
+import planImage from '../../public/images/roadmap.png';
+import disputeImage from '../../public/images/fight-man.png';
+import ficoCalcImage from '../../public/images/fico_calc.webp'
 
 export const HomePage: React.FC<{ blogPosts: BlogPostData[] }> = ({ blogPosts }) => {
     // const { showModal, setShowModal, showSuccessMessage } = useContext(SubscribeContext)
@@ -42,17 +45,15 @@ export const HomePage: React.FC<{ blogPosts: BlogPostData[] }> = ({ blogPosts })
             <div className="relative justify-center items-center -mt-12 md:-mt-32 drop-shadow-1xl block">
                 {/* <PreloadStaticImage imgSrc={mainWorkoutImage} styleProps={'h-[700px] w-full diagonal-cut-mobile  relative'} /> */}
                 <div className="grid grid-cols-1 h-full mt-10">
-                    <div className="absolute h-[700px] md:h-[600px] w-full -mt-20 overscroll-none hero-border-radius bg-hero-gradient-background "></div>
+                    <div className="absolute h-[700px] md:h-[750px] w-full -mt-20 overscroll-none hero-border-radius bg-hero-gradient-background "></div>
                     <div className="relative top-0 z-20 mx-auto md:mt-24 max-w-3xl md:px-4 text-center">
                         <div className="grid grid-cols-1 text-white place-content-center justify-items-center w-full">
-                            <h1 className="text-[25px] lg:text-4xl font-bold mt-10 mb-6 max-sm:px-5">I will dispute and remove <br /> <span ref={typedRef} /></h1>
+                            <h1 className="text-[25px] md:text-4xl font-bold mt-10 mb-6 max-sm:px-5">I will dispute and remove <br /> <span ref={typedRef} /></h1>
                             <p className="px-4 text-lg md:w-3/4 leading-relaxed">
-                                I create lightning-fast websites to attract customers and make a great first impression. My sites are lightweight, responsive,
-                                and designed with SEO, UI, and UX in mind. Experience speed, beauty, and functionality.
+                                The credit bureaus are incentivized to keep your credit score low. Take control of your credit score today! Contact me and lets setup a consultation to understand how I can help raise your score in 30 to 60 days.
                             </p>
 
-                            <p className="mb-8 mt-4 px-4 leading-relaxed">Contact me for a free consultation</p>
-                            <div>
+                            <div className="mt-4">
                                 <button
                                     aria-label="Contact Me"
                                     onClick={() => {
@@ -65,28 +66,28 @@ export const HomePage: React.FC<{ blogPosts: BlogPostData[] }> = ({ blogPosts })
 
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center w-3/4 md:w-[90%] lg:w-[130%] text-black gap-4 mt-6">
                                 <InfoCard
-                                    image={performaceImage}
-                                    title={'Performance'}
+                                    image={investigateImage}
+                                    title={'Deep Credit Analysis'}
                                     url="#"
-                                    description="I build websites focused on performance and speed. Unlike Wix and other no-code platforms, my sites render on the server for a faster user experience."
+                                    description="I will review your credit reports from the three major bureaus to find negative or questionable items affecting your score."
                                 />
                                 <InfoCard
-                                    image={seoImage}
-                                    title={'SEO'}
+                                    image={planImage}
+                                    title={'Personalized Plan'}
                                     url="#"
-                                    description="My websites include the proper SEO to make sure you get on to the front page of Google resulting in more visits to your website."
+                                    description="Based on the credit analysis, I'll create a personalized plan to challenge and remove negative items from your credit reports."
                                 />
                                 <InfoCard
-                                    image={customersImage}
-                                    title={'Attract Customers'}
+                                    image={disputeImage}
+                                    title={'Dispute The Bureaus'}
                                     url="#"
-                                    description="My websites are visually appealing and responsive. This will build trust with the users resulting in more customers."
+                                    description="I will use the FCRA law to dispute all negative items on your credit record. I will dispute public info, as well as negative items."
                                 />
                                 <InfoCard
-                                    image={responsiveImage}
-                                    title={'Responsive'}
+                                    image={educationImage}
+                                    title={'Ongoing Education'}
                                     url="#"
-                                    description="My websites are built for desktop and mobile. They will look visually stunning as on all devices and screen sizes."
+                                    description="I will educate you as to how to help raise your score immediately along side with my servcies. "
                                 />
                                 {/* <InfoCard
                                     image={responsiveImage}
@@ -113,8 +114,23 @@ export const HomePage: React.FC<{ blogPosts: BlogPostData[] }> = ({ blogPosts })
                     <div
                         ref={featuresRef}
                         className="grid grid-cols-1 gap-24 lg:gap-36 text-white mt-12 place-content-center justify-items-center w-full">
-                        <Performance />
-                        <Performance />
+                        <FeatureSection
+                            image={fairScoreImage}
+                            heading="What I will dispute"
+                            description="Choosing the right partner for your credit repair journey is crucial. I bring a personalized approach and deep expertise to help you navigate the complexities of credit disputes. Here's why partnering with me is your best choice."
+                            feature1="Expert Analysis: In-depth review to spot inaccuracies and negative items."
+                            feature2="Tailored Strategies: Custom plans to challenge and remove harmful items."
+                            feature3="Proven Results: A successful track record of boosting credit scores."
+                        />
+                        <FeatureSection
+                            image={ficoCalcImage}
+                            heading="Education on credit scoring"
+                            description="Understanding your credit score is essential for financial health. I offer comprehensive education on credit scoring to empower you with the knowledge needed to manage and improve your credit. Here's how I can help:"
+                            feature1="Clear Explanations: Break down complex credit concepts into easy-to-understand information."
+                            feature2="Practical Tips: Provide actionable advice for maintaining and boosting your credit score."
+                            feature3="Ongoing Support: Continuous guidance to keep you informed and on track with your credit goals."
+                        />
+                        {/* <FeatureSection /> */}
                     </div>
 
                     {/* <div className="relative top-0 z-20 max-w-5xl mx-auto mt:8 md:mt-24 px-4 text-start">
