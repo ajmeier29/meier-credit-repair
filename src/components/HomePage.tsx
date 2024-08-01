@@ -16,7 +16,7 @@ import disputeImage from '../../public/images/fight-man.png';
 import ficoCalcImage from '../../public/images/fico_calc.webp';
 import ficoEducationImage from '../../public/images/fico_education.webp';
 
-export const HomePage: React.FC<{ blogPosts: BlogPostData[] }> = ({ blogPosts }) => {
+export default function HomePage() {
     // const { showModal, setShowModal, showSuccessMessage } = useContext(SubscribeContext)
     // const openModal = () => setShowModal(true);
     // const closeModal = () => setShowModal(false);
