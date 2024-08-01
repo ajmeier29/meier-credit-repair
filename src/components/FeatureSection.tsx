@@ -36,7 +36,7 @@ export default function FeatureSection({ image, heading, description, feature1, 
                         />
                     </div>
                 </div>
-                <div className='lg:p-10 max-md:mt-10 top-0 align-text-top'>
+                <div className='md:pl-24 md:pr-24 lg:p-10 max-lg:mt-10 top-0 align-text-top'>
                     <div className='text-2xl text-start text-black pb-2'>
                         {heading}
                     </div>

@@ -115,6 +115,14 @@ export const HomePage: React.FC<{ blogPosts: BlogPostData[] }> = ({ blogPosts })
                         ref={featuresRef}
                         className="grid grid-cols-1 gap-24 lg:gap-36 text-white mt-12 place-content-center justify-items-center w-full">
                         <FeatureSection
+                            image={ficoCalcImage}
+                            heading="Why a good credit score is important"
+                            description="Understanding your credit score is essential for financial health. I offer comprehensive education on credit scoring to empower you with the knowledge needed to manage and improve your credit. Here's how I can help:"
+                            feature1="Clear Explanations: Break down complex credit concepts into easy-to-understand information."
+                            feature2="Practical Tips: Provide actionable advice for maintaining and boosting your credit score."
+                            feature3="Ongoing Support: Continuous guidance to keep you informed and on track with your credit goals."
+                        />
+                        <FeatureSection
                             image={fairScoreImage}
                             heading="What I will dispute"
                             description="Choosing the right partner for your credit repair journey is crucial. I bring a personalized approach and deep expertise to help you navigate the complexities of credit disputes. Here's why partnering with me is your best choice."
