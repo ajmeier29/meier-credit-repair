@@ -19,7 +19,7 @@ export default function Footer() {
                 data-aos-delay="50"
                 data-aos-duration="500"
                 className="pt-16 mt-20">
-                <div className="mt-8 bg-footer-gradient pt-9">
+                <div className="relative mt-8 bg-footer-gradient pt-9">
                     <div className="mx-auto w-full h-full px-4 xl:px-0">
                         <div className="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
                             <div className="md:w-[316px]">
