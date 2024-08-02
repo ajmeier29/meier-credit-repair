@@ -40,7 +40,7 @@ export default async function Page() {
                                         className="relative z-10 mb-10 overflow-hidden rounded-[10px] border-2 border-stroke  bg-white  py-10 px-8 shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-[50px]"
                                     >
                                         <span className="mb-3 block text-lg font-semibold">
-                                            Standard
+                                            Standard <span className="text-sm">(5 Disputes)</span>
                                         </span>
                                         <h2 className="mb-5 text-[42px] font-bold text-dark">
                                             <span>$99 &nbsp;</span>
@@ -65,9 +65,6 @@ export default async function Page() {
                                             </p>
                                             <p className="text-base text-body-color ">
                                                 Client Portal for tracking progress on disputes.
-                                            </p>
-                                            <p className="text-base text-body-color ">
-                                                Up to 5 Disputes
                                             </p>
                                             <p className="text-base text-body-color ">
                                                 Breakdown of Credit Report
@@ -156,9 +153,6 @@ export default async function Page() {
                                                 Client Portal for tracking progress on disputes.
                                             </p>
                                             <p className="text-base text-body-color ">
-                                                Up to 5 Disputes
-                                            </p>
-                                            <p className="text-base text-body-color ">
                                                 Breakdown of Credit Report
                                             </p>
                                             <p className="text-base text-body-color ">
@@ -243,9 +237,6 @@ export default async function Page() {
                                             </p>
                                             <p className="text-base text-body-color ">
                                                 Client Portal for tracking progress on disputes.
-                                            </p>
-                                            <p className="text-base text-body-color ">
-                                                Up to 5 Disputes
                                             </p>
                                             <p className="text-base text-body-color ">
                                                 Breakdown of Credit Report
