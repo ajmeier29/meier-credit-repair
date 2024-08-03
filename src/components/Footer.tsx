@@ -105,7 +105,7 @@ export default function Footer() {
                                         <ul>
                                             <li className="mt-[15px]"><a
                                                 className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                                href="#">Pricing</a></li>
+                                                href="/pricing">Pricing</a></li>
                                             <li className="mt-[15px]"><a
                                                 className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
                                                 href="#">About</a></li>
