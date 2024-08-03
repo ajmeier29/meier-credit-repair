@@ -18,7 +18,7 @@ export default async function Index() {
     return (
         <>
             <Header />
-            <div className="absolute h-[700px] md:h-[750px] w-full -mt-20 overscroll-none hero-border-radius bg-hero-gradient-background "></div>
+            <div className="absolute h-[550px] md:h-[750px] w-full -mt-20 md:-mt-24 overscroll-none hero-border-radius bg-hero-gradient-background "></div>
             <div className="relative justify-center items-center mx-2 mt-2 lg:mx-40 drop-shadow-1xl">
                 <div className="container mx-auto">
                     <div className="-mx-4 flex flex-wrap">

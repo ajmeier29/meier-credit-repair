@@ -22,6 +22,7 @@ export default async function Page({ params }: { params: { blogpost: string } })
 
     return (
         <>
+            <div className="absolute h-[550px] md:h-[750px] w-full -mt-20 md:-mt-24 overscroll-none hero-border-radius bg-hero-gradient-background "></div>
             <Header />
             <BlogPostPage post={blogPostData} />
             <Footer />
