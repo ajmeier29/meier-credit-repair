@@ -1,0 +1,48 @@
+{
+  "title": "posts",
+  "type": "object",
+  "properties": {
+    "tags": {
+      "required": false,
+      "description": "Add tags to the post",
+      "fieldType": "Tags",
+      "dataType": "array",
+      "title": "Tags",
+      "values": [
+        {
+          "value": "nextJs",
+          "label": "NextJs"
+        },
+        {
+          "value": "gitHub",
+          "label": "GitHub"
+        },
+        {
+          "value": "outstatic",
+          "label": "Outstatic"
+        }
+      ]
+    },
+    "title": {
+      "required": false,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Title"
+    },
+    "description": {
+      "required": false,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Description"
+    },
+    "postData": {
+      "required": false,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "PostData"
+    }
+  }
+}
