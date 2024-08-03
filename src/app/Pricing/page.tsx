@@ -20,9 +20,6 @@ export default async function Page() {
                             <div className="-mx-4 flex flex-wrap">
                                 <div className="w-full px-4">
                                     <div className="mx-auto mb-6 md:mb-[60px] max-w-[510px] text-center">
-                                        <span className="mb-2 block text-lg font-semibold text-white">
-                                            Pricing Table
-                                        </span>
                                         <h2
                                             className="mb-3 text-white text-3xl leading-[1.208] font-bold text-dark sm:text-4xl md:text-[40px]"
                                         >
