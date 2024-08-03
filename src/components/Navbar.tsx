@@ -21,7 +21,7 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                             <ul className="flex space-x-10 text-base font-bold text-white ">
                                 <li
                                     className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear mt-3">
-                                    <a href="#">Home</a>
+                                    <a href="/">Home</a>
                                 </li>
                                 <li
                                     className="hover:bg-transparent transition-all duration-100 text-white ease-linear">
@@ -37,7 +37,7 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                                 </li>
                                 <li
                                     className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear mt-3">
-                                    <a href="#">Pricing</a>
+                                    <a href="/Pricing">Pricing</a>
                                 </li>
                                 <li
                                     className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear mt-3">
@@ -89,7 +89,7 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                     </div>
                     <div className="absolute text-black text-xl font-medium left-0 grid grid-cols-1 mx-5 mt-5 gap-4 justify-items-start ">
                         <div className="ml-5">
-                            <a href="#">Home</a>
+                            <a href="/">Home</a>
                         </div>
                         <div className="">
                             <details className="collapse collapse-arrow ">
@@ -110,7 +110,7 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                             </details>
                         </div>
                         <div className="ml-5">
-                            <a href="#">Pricing</a>
+                            <a href="/Pricing">Pricing</a>
                         </div>
                         <div className="ml-5">
                             <a href="#">About</a>

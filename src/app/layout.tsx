@@ -7,8 +7,8 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Code By Andy",
-  description: "Fast, Responseive, SEO Friendly Websites",
+  title: "The Money Mentor - Credit Repair",
+  description: "Improve your credit score FAST!"
 };
 
 export default function RootLayout({

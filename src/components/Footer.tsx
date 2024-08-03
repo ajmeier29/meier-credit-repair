@@ -19,13 +19,13 @@ export default function Footer() {
                 data-aos-delay="50"
                 data-aos-duration="500"
                 className="pt-16 mt-20">
-                <div className="mt-8 bg-footer-gradient pt-9">
+                <div className="relative mt-8 bg-footer-gradient pt-9">
                     <div className="mx-auto w-full h-full px-4 xl:px-0">
                         <div className="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
                             <div className="md:w-[316px]">
                                 <h2 className="text-white font-bold text-2xl">The Money Mentor</h2>
                                 <p className="mt-[18px] text-[15px] font-normal text-white/[80%]">
-                                    I'm dedicated to helping you improve your credit score and achieve your financial goals.
+                                    I&#39;m dedicated to helping you improve your credit score and achieve your financial goals.
                                     Explore our resources, expert advice, and personalized plans to take control of your credit.
                                     Contact us today to start your journey toward a brighter financial future.</p>
                                 {/* <div className="mt-[18px] flex gap-4">

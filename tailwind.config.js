@@ -33,6 +33,8 @@ module.exports = {
         "option-hover-bg": "#3f8790",
         "option-bg": "#c0c7c8",
         "primary-hover": "pink-600",
+        "primary-green": "#4ec662",
+        "primary-blue": "#3d63d5"
       },
       fontSize: {
         "navbar-font-xl": "20px"
