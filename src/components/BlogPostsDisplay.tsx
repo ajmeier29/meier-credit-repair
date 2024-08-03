@@ -48,13 +48,13 @@ const BlogPostTile = ({ blogPosts }: { blogPosts: BlogPostData[] }) => {
                                 className="rounded-lg p-3 w-full ease-out duration-1000 delay-1000">
                                 <Link
                                     href={{
-                                        pathname: `/BlogPosts/${ID}`,
+                                        pathname: `/blogposts/${ID}`,
                                         query: {
                                             id: ID
                                         }
                                     }}
                                 >
-                                    <div className="relative rounded-lg overflow-hidden">
+                                    <div className="relative shadow-2xl rounded-lg overflow-hidden">
                                         <PreloadImage imgSrc={imageUrl} styleProps="object-cover w-full h-[53vw] md:h-[33vw] justify-center" />
                                         {/* <PreloadImage imgSrc={imageUrl} styleProps="absolute blur-sm object-cover h-[25%] object-bottom w-full justify-center bottom-0 left-0 z-20" /> */}
                                         <div className="absolute bottom-3 sm:bottom-9 md:bottom-3 lg:bottom-7 left-2 ml-3 w-full z-30">
