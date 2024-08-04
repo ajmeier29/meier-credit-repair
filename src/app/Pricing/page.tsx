@@ -1,3 +1,4 @@
+import CalendlyModal from "@/components/CalendlyEmbedded";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
@@ -12,7 +13,12 @@ export default async function Page() {
         <>
             <div className="grid grid-cols-1">
                 <Header />
-                <div className="h-[700px] md:h-[750px] w-full -mt-20 md:-mt-24 overscroll-none hero-border-radius bg-hero-gradient-background mb-[2200px] md:mb-[400px] ">
+
+                <div
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                    data-aos-duration="500"
+                    className="h-[700px] md:h-[750px] w-full -mt-20 md:-mt-24 overscroll-none hero-border-radius bg-hero-gradient-background mb-[2200px] md:mb-[400px] ">
                     <section
                         className=" z-10 overflow-hidden max-sm:ml-5 max-sm:mr-5 dark:bg-dark pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] mb-20"
                     >
@@ -23,7 +29,7 @@ export default async function Page() {
                                         <h2
                                             className="mb-3 text-white text-3xl leading-[1.208] font-bold text-dark sm:text-4xl md:text-[40px]"
                                         >
-                                            Our Pricing Plan
+                                            Our Pricing Plans
                                         </h2>
                                         <p className="text-base text-body-color text-white">
                                             Explore our carefully crafted plans designed to meet various credit repair needs, offering comprehensive support and strategies to start improving your credit today.
@@ -292,10 +298,13 @@ export default async function Page() {
                                 </div>
                             </div>
                         </div>
+
                     </section>
+
                 </div >
                 <Footer />
             </div>
+            <CalendlyModal url="https://calendly.com/ajmeier29/initial-consultation" />
         </>
     )
 }

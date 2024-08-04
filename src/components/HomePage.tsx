@@ -1,5 +1,4 @@
 'use client'
-import { BlogPostData } from "@/data/data";
 import { PreloadStaticImage } from "./PreloadImage";
 import ContactModal from "./ContactModal";
 import Typed from 'typed.js';
@@ -15,6 +14,7 @@ import planImage from '../../public/images/roadmap.png';
 import disputeImage from '../../public/images/fight-man.png';
 import ficoCalcImage from '../../public/images/fico_calc.webp';
 import ficoEducationImage from '../../public/images/fico_education.webp';
+import CalendlyModal from "./CalendlyEmbedded";
 
 export default function HomePage() {
     // const { showModal, setShowModal, showSuccessMessage } = useContext(SubscribeContext)
@@ -40,8 +40,6 @@ export default function HomePage() {
 
     return (
         <>
-
-
             <ContactModal />
             <div className="relative justify-center items-center -mt-12 md:-mt-32 drop-shadow-1xl block">
                 {/* <PreloadStaticImage imgSrc={mainWorkoutImage} styleProps={'h-[700px] w-full diagonal-cut-mobile  relative'} /> */}
@@ -213,6 +211,7 @@ export default function HomePage() {
                     </div>
 
                 </div> */}
+                <CalendlyModal url="https://calendly.com/ajmeier29/initial-consultation" />
             </div >
         </>
     )

@@ -1,6 +1,5 @@
 import { BlogPostData } from "@/data/data"
 import PreloadImage from "./PreloadImage"
-import GetFormattedDate from "@/lib/Date";
 
 export const BlogPostPage: React.FC<{ post: BlogPostData }> = ({ post: blogPostData }) => {
     return (

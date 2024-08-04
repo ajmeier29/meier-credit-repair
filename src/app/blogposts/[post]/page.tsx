@@ -5,6 +5,7 @@ import { BlogPostPage } from '@/components/BlogPost';
 import { BlogPostData, GetBlogPostData } from '@/data/data';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import CalendlyModal from '@/components/CalendlyEmbedded';
 
 export default async function Page({ params }: { params: { blogpost: string } }) {
     const searchParams = useSearchParams()
@@ -26,6 +27,7 @@ export default async function Page({ params }: { params: { blogpost: string } })
             <Header />
             <BlogPostPage post={blogPostData} />
             <Footer />
+            <CalendlyModal url="https://calendly.com/ajmeier29/initial-consultation" />
         </>
     )
 }

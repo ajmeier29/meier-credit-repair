@@ -1,4 +1,5 @@
 import { BlogPostsDisplay } from "@/components/BlogPostsDisplay";
+import CalendlyModal from "@/components/CalendlyEmbedded";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { PreloadStaticImage } from "@/components/PreloadImage";
@@ -45,7 +46,9 @@ export default async function Index() {
                 <div>
                     <Footer />
                 </div>
+
             </div>
+            <CalendlyModal url="https://calendly.com/ajmeier29/initial-consultation" />
         </>
     )
 }
