@@ -37,7 +37,7 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                                 </li> */}
                                 <li
                                     className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear mt-3">
-                                    <a href="/pricing">Pricing</a>
+                                    <a href="/Pricing">Pricing</a>
                                 </li>
                                 <li
                                     className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear mt-3">
@@ -114,7 +114,7 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                             </details>
                         </div> */}
                         <div className="ml-5">
-                            <a href="/pricing">Pricing</a>
+                            <a href="/Pricing">Pricing</a>
                         </div>
                         <div className="ml-5">
                             <a href="/blogposts">Blog</a>
