@@ -23,7 +23,7 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                                     className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear mt-3">
                                     <a href="/">Home</a>
                                 </li>
-                                <li
+                                {/* <li
                                     className="hover:bg-transparent transition-all duration-100 text-white ease-linear">
 
                                     <div className="dropdown dropdown-hover mr-[-16px] ml-[-16px]">
@@ -34,10 +34,14 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                                             <li><a>SEO Fix</a></li>
                                         </ul>
                                     </div>
-                                </li>
+                                </li> */}
                                 <li
                                     className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear mt-3">
                                     <a href="/pricing">Pricing</a>
+                                </li>
+                                <li
+                                    className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear mt-3">
+                                    <a href="/blogposts">Blog</a>
                                 </li>
                                 <li
                                     className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear mt-3">
@@ -91,7 +95,7 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                         <div className="ml-5">
                             <a href="/">Home</a>
                         </div>
-                        <div className="">
+                        {/* <div className="">
                             <details className="collapse collapse-arrow ">
                                 <summary className="collapse-title text-xl ml-1 my-[-20px] font-medium ">Services</summary>
                                 <div className="collapse-content mt-2">
@@ -108,9 +112,12 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                                     </div>
                                 </div>
                             </details>
-                        </div>
+                        </div> */}
                         <div className="ml-5">
                             <a href="/pricing">Pricing</a>
+                        </div>
+                        <div className="ml-5">
+                            <a href="/blogposts">Blog</a>
                         </div>
                         <div className="ml-5">
                             <a href="#">About</a>

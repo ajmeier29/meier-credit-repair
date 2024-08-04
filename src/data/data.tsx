@@ -31,7 +31,7 @@ async function GetAllBlogPostData(): Promise<BlogPostData[]> {
     })
 
     await client.getEntries({
-        content_type: 'blogPosts', // Replace with your actual content type ID
+        content_type: 'crBlogPosts', // Replace with your actual content type ID
         'fields.publish': true,
     })
         .then((entries: any) => {
