@@ -48,10 +48,21 @@ export default function HomePage() {
             typed.destroy();
         };
     }, []);
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
 
     return (
         <>
             <ContactModal />
+            {/* <div className="fixed bottom-10 left-6 md:right-24 w-full flex justify-start z-50">
+                <button className="bg-slate-200 p-2 rounded-lg" onClick={scrollToTop}>
+                    <svg className="h-8 w-8 text-primary-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">  <polyline points="18 15 12 9 6 15" /></svg>
+                </button>
+            </div> */}
             <div className="relative justify-center items-center -mt-12 md:-mt-32 drop-shadow-1xl block">
                 {/* <PreloadStaticImage imgSrc={mainWorkoutImage} styleProps={'h-[700px] w-full diagonal-cut-mobile  relative'} /> */}
                 <div className="grid grid-cols-1 h-full mt-10">
