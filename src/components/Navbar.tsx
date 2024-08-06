@@ -19,12 +19,16 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
             <div className="top-0 py-1 lg:py-2 w-full lg:relative z-40">
                 <nav className="z-10 sticky top-0 left-0 right-0 max-w-4xl xl:max-w-5xl mx-auto px-5 py-2.5 lg:border-none lg:py-4">
                     <div className='absolute justify-start inline'>
-                        <Image
-                            src={moneyMentorLogo}
-                            alt=''
-                            height={60}
-                            width={150}
-                        />
+                        <Link
+                            href={'/'}
+                        >
+                            <Image
+                                src={moneyMentorLogo}
+                                alt=''
+                                height={60}
+                                width={150}
+                            />
+                        </Link>
                     </div>
                     <div className="flex items-center justify-end">
                         <div className="hidden md:block">
