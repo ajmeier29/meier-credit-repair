@@ -27,7 +27,7 @@ export default async function Page() {
                                 <div className="w-full px-4">
                                     <div className="mx-auto mb-6 md:mb-[60px] max-w-[510px] text-center">
                                         <h2
-                                            className="mb-3 text-white text-3xl leading-[1.208] font-bold text-dark sm:text-4xl md:text-[40px]"
+                                            className="mb-3 text-white text-3xl max-sm:mt-4 leading-[1.208] font-bold text-dark sm:text-4xl md:text-[40px]"
                                         >
                                             Our Pricing Plans
                                         </h2>

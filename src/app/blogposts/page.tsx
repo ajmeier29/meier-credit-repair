@@ -24,7 +24,7 @@ export default async function Index() {
                 <div className="container mx-auto">
                     <div className="-mx-4 flex flex-wrap">
                         <div className="w-full px-4">
-                            <div className="mx-auto mb-6 md:mb-[60px] max-w-[75%] text-center">
+                            <div className="mx-auto mb-6 md:mb-[60px] max-sm:mt-4 max-w-[75%] text-center">
                                 <h2
                                     className="mb-3 text-white text-3xl leading-[1.208] font-bold text-dark sm:text-4xl md:text-[40px]"
                                 >
