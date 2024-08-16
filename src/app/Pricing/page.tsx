@@ -9,6 +9,8 @@ export const metadata: Metadata = {
 };
 
 export default async function Page() {
+    const standardPayLink: string = (process.env.NEXT_PUBLIC_STANDARD_PAY_LINK as string);
+
     return (
         <>
             <div className="grid grid-cols-1">
@@ -172,7 +174,7 @@ export default async function Page() {
                                             </s>
                                         </div>
                                         <a
-                                            href="https://buy.stripe.com/test_dR64hi48FfpSgTe000"
+                                            href={standardPayLink}
                                             className="block w-full rounded-md border border-primary bg-primary-green p-3 text-center text-base font-medium transition hover:bg-opacity-90"
                                         >
                                             Choose Premium
