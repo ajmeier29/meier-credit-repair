@@ -172,7 +172,7 @@ export default async function Page() {
                                             </s>
                                         </div>
                                         <a
-                                            href="javascript:void(0)"
+                                            href="https://buy.stripe.com/test_dR64hi48FfpSgTe000"
                                             className="block w-full rounded-md border border-primary bg-primary-green p-3 text-center text-base font-medium transition hover:bg-opacity-90"
                                         >
                                             Choose Premium
