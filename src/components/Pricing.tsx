@@ -61,7 +61,7 @@ export default function Pricing() {
 
                     </div>
 
-                    <div className="tab-container mb-8 md:w-1/2 mx-auto">
+                    <div className="tab-container mb-8 md:w-1/3 mx-auto">
                         <div
                             className={`tab tab--1 ${tabOneHoverTesxtColor}`}
                             onMouseOver={() => handleMouseOver('2px')}
