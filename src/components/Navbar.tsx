@@ -2,6 +2,8 @@
 import Link from "next/link";
 import { ReactNode, useState } from "react";
 import { motion } from 'framer-motion';
+import moneyMentorLogo from '../../public/images/theMoneMentorLogoWhite.png';
+import Image from "next/image";
 
 type NavBarProps =
     {
@@ -16,6 +18,18 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
         <>
             <div className="top-0 py-1 lg:py-2 w-full lg:relative z-40">
                 <nav className="z-10 sticky top-0 left-0 right-0 max-w-4xl xl:max-w-5xl mx-auto px-5 py-2.5 lg:border-none lg:py-4">
+                    <div className='absolute justify-start inline'>
+                        <Link
+                            href={'/'}
+                        >
+                            <Image
+                                src={moneyMentorLogo}
+                                alt=''
+                                height={60}
+                                width={150}
+                            />
+                        </Link>
+                    </div>
                     <div className="flex items-center justify-end">
                         <div className="hidden md:block">
                             <ul className="flex space-x-10 text-base font-bold text-white ">
@@ -37,7 +51,7 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                                 </li> */}
                                 <li
                                     className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear mt-3">
-                                    <a href="/pricing">Pricing</a>
+                                    <a href="/Pricing">Pricing</a>
                                 </li>
                                 <li
                                     className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear mt-3">
@@ -114,7 +128,7 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                             </details>
                         </div> */}
                         <div className="ml-5">
-                            <a href="/pricing">Pricing</a>
+                            <a href="/Pricing">Pricing</a>
                         </div>
                         <div className="ml-5">
                             <a href="/blogposts">Blog</a>

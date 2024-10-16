@@ -1,4 +1,5 @@
 import { BlogPostsDisplay } from "@/components/BlogPostsDisplay";
+import CalendlyModal from "@/components/CalendlyEmbedded";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { PreloadStaticImage } from "@/components/PreloadImage";
@@ -18,12 +19,12 @@ export default async function Index() {
     return (
         <>
             <Header />
-            <div className="absolute h-[550px] md:h-[750px] w-full -mt-20 md:-mt-24 overscroll-none hero-border-radius bg-hero-gradient-background "></div>
+            <div className="absolute h-[550px] md:h-[550px] w-full -mt-20 md:-mt-24 overscroll-none hero-border-radius bg-hero-gradient-background "></div>
             <div className="relative justify-center items-center mx-2 mt-2 lg:mx-40 drop-shadow-1xl">
                 <div className="container mx-auto">
                     <div className="-mx-4 flex flex-wrap">
                         <div className="w-full px-4">
-                            <div className="mx-auto mb-6 md:mb-[60px] max-w-[75%] text-center">
+                            <div className="mx-auto mb-6 md:mb-[60px] max-sm:mt-4 max-w-[75%] text-center">
                                 <h2
                                     className="mb-3 text-white text-3xl leading-[1.208] font-bold text-dark sm:text-4xl md:text-[40px]"
                                 >
@@ -45,7 +46,9 @@ export default async function Index() {
                 <div>
                     <Footer />
                 </div>
+
             </div>
+            <CalendlyModal url="https://calendly.com/ajmeier29/initial-consultation" />
         </>
     )
 }
