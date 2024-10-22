@@ -51,7 +51,7 @@ export default function Footer() {
                                         </svg>
                                     </div>
                                     <div className="ml-[18px]">
-                                        <a href="tel:+911800123444" className="font-Inter text-[14px] font-medium text-white">+1 610-555-5555</a>
+                                        <a href="tel:+911800123444" className="font-Inter text-[14px] font-medium text-white">+1 610-390-5742</a>
                                         <p className="font-Inter text-[12px] font-medium text-white">Phone Number</p>
                                     </div>
                                 </div>
@@ -88,27 +88,17 @@ export default function Footer() {
                                     <p className="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Pages</p>
                                     <div className='grid grid-cols-2 gap-3'>
                                         <ul>
-
                                             <li className="mt-[15px]"><a
                                                 className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
                                                 href="/">Home</a></li>
-                                            <li className="mt-[15px]"><a
-                                                className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                                href="#">Website Design</a></li>
-                                            <li className="mt-[15px]"><a
-                                                className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                                href="#">Website Fix</a></li>
-                                            <li className="mt-[15px]"><a
-                                                className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                                href="#">SEO Fix</a></li>
-                                        </ul>
-                                        <ul>
                                             <li className="mt-[15px]"><a
                                                 className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
                                                 href="/Pricing">Pricing</a></li>
                                             <li className="mt-[15px]"><a
                                                 className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
                                                 href="#">About</a></li>
+                                        </ul>
+                                        <ul>
                                             <li className="mt-[15px]"><Link
                                                 onClick={(e) => {
                                                     if (document) {
