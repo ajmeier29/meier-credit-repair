@@ -99,6 +99,9 @@ export default function Footer() {
                                                 href="#">About</a></li>
                                         </ul>
                                         <ul>
+                                            <li className="mt-[15px]"><a
+                                                className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
+                                                href="/Process">The Process</a></li>
                                             <li className="mt-[15px]"><Link
                                                 onClick={(e) => {
                                                     if (document) {
