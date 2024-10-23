@@ -2,6 +2,10 @@
 
 import { SetStateAction, useState } from "react";
 import myscoreIqImage from '../../public/images/myscoreiq.png';
+import creditAnalysis1 from '../../public/images/creditAnalysis1.png';
+import permissibleImage from '../../public/images/permissiblePletter.png'
+import successImage1 from '../../public/images/successImage1.png'
+import disputeBureausImage from '../../public/images/disputeBureaus.webp';
 import Image, { StaticImageData } from 'next/image';
 
 
@@ -39,7 +43,7 @@ export default function Process() {
                 data-aos="fade-up"
                 data-aos-delay="50"
                 data-aos-duration="500"
-                className="h-[700px] md:h-[750px] w-full -mt-20 md:-mt-24 overscroll-none hero-border-radius bg-hero-gradient-background mb-[2200px] md:mb-[1350px] lg:mb-[1500px] ">
+                className="h-[700px] md:h-[750px] w-full -mt-20 md:-mt-24 overscroll-none hero-border-radius bg-hero-gradient-background mb-[2200px] md:mb-[1350px] lg:mb-[3000px] ">
                 <section
                     className=" z-10 overflow-hidden max-sm:ml-5 max-sm:mr-5 dark:bg-dark pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] mb-20"
                 >
@@ -92,97 +96,100 @@ export default function Process() {
                                 <li>
                                     <hr />
                                     <div className="timeline-middle">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            className="h-5 w-5">
-                                            <path
-                                                fillRule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                                clipRule="evenodd" />
-                                        </svg>
+                                        <TimelineIcon />
                                     </div>
                                     <div className="timeline-end mb-10">
-                                        <time className="font-mono italic">1998</time>
-                                        <div className="text-lg font-black">iMac</div>
-                                        iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc. It has
-                                        been the primary part of Apple's consumer desktop offerings since its debut in August 1998,
-                                        and has evolved through seven distinct forms
+                                        <time className="font-mono italic">Step 2</time>
+                                        <div className="text-lg font-black">Your Detailed Credit Analysis</div>
+                                        You will receive an emailed analysis of your credit along with information to help you
+                                        raise your credit score as we start the disputing process on our end.
+                                    </div>
+                                    <hr />
+                                </li>
+                                <li>
+                                    <div className="timeline-end">
+                                        <Image
+                                            src={creditAnalysis1}
+                                            alt=''
+                                            height={500}
+                                            width={600}
+                                        />
                                     </div>
                                     <hr />
                                 </li>
                                 <li>
                                     <hr />
                                     <div className="timeline-middle">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            className="h-5 w-5">
-                                            <path
-                                                fillRule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                                clipRule="evenodd" />
-                                        </svg>
+                                        <TimelineIcon />
                                     </div>
                                     <div className="timeline-start mb-10 md:text-end">
-                                        <time className="font-mono italic">2001</time>
-                                        <div className="text-lg font-black">iPod</div>
-                                        The iPod is a discontinued series of portable media players and multi-purpose mobile devices
-                                        designed and marketed by Apple Inc. The first version was released on October 23, 2001, about
-                                        8+1⁄2 months after the Macintosh version of iTunes was released. Apple sold an estimated 450
-                                        million iPod products as of 2022. Apple discontinued the iPod product line on May 10, 2022. At
-                                        over 20 years, the iPod brand is the oldest to be discontinued by Apple
+                                        <time className="font-mono italic">Round 1</time>
+                                        <div className="text-lg font-black">First Round of Letters</div>
+                                        We will be sending out disputes on your behalf to all 3 bureaus, loan companies, creditors, and more.
+                                        Throughout this first round, we will be, 1) Updating your information across the 3 bureaus to ensure all your personal info is accurate.
+                                        2) Removing all Hard Inquiries not tied to any open accounts.
+                                        3) First round disputing all negative accounts.
+                                    </div>
+                                    <hr />
+                                </li>
+                                <li>
+                                    <div className="timeline-start">
+                                        <Image
+                                            src={permissibleImage}
+                                            alt=''
+                                            height={500}
+                                            width={600}
+                                        />
                                     </div>
                                     <hr />
                                 </li>
                                 <li>
                                     <hr />
                                     <div className="timeline-middle">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            className="h-5 w-5">
-                                            <path
-                                                fillRule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                                clipRule="evenodd" />
-                                        </svg>
+                                        <TimelineIcon />
                                     </div>
                                     <div className="timeline-end mb-10">
-                                        <time className="font-mono italic">2007</time>
-                                        <div className="text-lg font-black">iPhone</div>
-                                        iPhone is a line of smartphones produced by Apple Inc. that use Apple's own iOS mobile
-                                        operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on
-                                        January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As
-                                        of November 1, 2018, more than 2.2 billion iPhones had been sold. As of 2022, the iPhone
-                                        accounts for 15.6% of global smartphone market share
+                                        <time className="font-mono italic">After Round 1</time>
+                                        <div className="text-lg font-black">Reimport Credit Report</div>
+                                        After the round 1 dispute is complete, we import your updated credit report to analzye and assess
+                                        which accounts were removed, and which ones need a round 2 (or more) dispute.
+                                    </div>
+                                    <hr />
+                                </li>
+                                <li>
+                                    <div className="timeline-end">
+                                        <Image
+                                            src={successImage1}
+                                            alt=''
+                                            height={500}
+                                            width={600}
+                                        />
                                     </div>
                                     <hr />
                                 </li>
                                 <li>
                                     <hr />
                                     <div className="timeline-middle">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            className="h-5 w-5">
-                                            <path
-                                                fillRule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                                clipRule="evenodd" />
-                                        </svg>
+                                        <TimelineIcon />
                                     </div>
                                     <div className="timeline-start mb-10 md:text-end">
-                                        <time className="font-mono italic">2015</time>
-                                        <div className="text-lg font-black">Apple Watch</div>
-                                        The Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates fitness
-                                        tracking, health-oriented capabilities, and wireless telecommunication, and integrates with
-                                        iOS and other Apple products and services
+                                        <time className="font-mono italic">Round 2</time>
+                                        <div className="text-lg font-black">Second Round of Letters</div>
+                                        After the first round is completed, any left over negative items and hard inquries will be disputed
+                                        and set out to all 3 bureaus. Typically, after 2+ rounds they we can expect more things to fall off
+                                        of your report. (although not guaranteed)
                                     </div>
+                                </li>
+                                <li>
+                                    <div className="timeline-start">
+                                        <Image
+                                            src={disputeBureausImage}
+                                            alt=''
+                                            height={500}
+                                            width={600}
+                                        />
+                                    </div>
+                                    <hr />
                                 </li>
                             </ul>
                         </div>
