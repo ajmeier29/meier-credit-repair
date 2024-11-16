@@ -37,6 +37,10 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                                     className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear mt-3">
                                     <a href="/">Home</a>
                                 </li>
+                                <li
+                                    className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear mt-3">
+                                    <a href="/Process">The Process</a>
+                                </li>
                                 {/* <li
                                     className="hover:bg-transparent transition-all duration-100 text-white ease-linear">
 
@@ -127,6 +131,9 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                                 </div>
                             </details>
                         </div> */}
+                        <div className="ml-5">
+                            <a href="/Process">The Process</a>
+                        </div>
                         <div className="ml-5">
                             <a href="/Pricing">Pricing</a>
                         </div>

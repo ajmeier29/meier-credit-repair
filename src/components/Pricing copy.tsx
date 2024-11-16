@@ -10,7 +10,7 @@ export default function Pricing() {
     const [indicatorPosition, setIndicatorPosition] = useState('2px');
     const [tabOneHoverTesxtColor, settabOneHoverTesxtColor] = useState("text-white");
     const [tabTwoHoverTesxtColor, settabTwoHoverTesxtColor] = useState("text-black");
-    const [isMonthly, setIsMonthly] = useState(false);
+    const [isMonthly, setIsMonthly] = useState(true);
 
     const handleMouseOver = (position: SetStateAction<string>) => {
         setHovered(true);
@@ -46,7 +46,7 @@ export default function Pricing() {
                     <div className="container mx-auto">
                         <div className="-mx-4 flex flex-wrap">
                             <div className="w-full px-4">
-                                <div className="mx-auto mb-8 md:mb-[40px] max-w-[510px] text-center">
+                                <div className="mx-auto mb-6 md:mb-[60px] max-w-[510px] text-center">
                                     <h2
                                         className="mb-3 text-white text-3xl max-sm:mt-4 leading-[1.208] font-bold text-dark sm:text-4xl md:text-[40px]"
                                     >
@@ -55,22 +55,13 @@ export default function Pricing() {
                                     <p className="text-base text-body-color text-white">
                                         Explore our carefully crafted plans designed to meet various credit repair needs, offering comprehensive support and strategies to start improving your credit today.
                                     </p>
-                                    <div className="flex items-center justify-center mt-8">
-                                        <span className="text-white text-xl md:text-2xl mr-4">Monthly</span>
-                                        <input
-                                            type="checkbox"
-                                            className="toggle toggle-lg"
-                                            checked={isMonthly}
-                                            onChange={() => setIsMonthly(!isMonthly)}
-                                        />
-                                        <span className="text-white text-xl md:text-2xl ml-4">One Time</span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
-                    {/* <div className="tab-container mb-8 md:w-1/3 mx-auto">
+                    <div className="tab-container mb-8 md:w-1/3 mx-auto">
                         <div
                             className={`tab tab--1 ${tabOneHoverTesxtColor}`}
                             onMouseOver={() => handleMouseOver('2px')}
@@ -84,10 +75,9 @@ export default function Pricing() {
                             One Time Payment
                         </div>
                         <div className="indicator" style={{ left: indicatorPosition }}></div>
-                    </div> */}
-
+                    </div>
                     <div className="md:mx-16">
-                        {!isMonthly ?
+                        {isMonthly ?
                             (
                                 <Monthly />
                             ) :

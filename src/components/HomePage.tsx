@@ -81,7 +81,7 @@ export default function HomePage() {
                                         if (document) {
                                             (document.getElementById('contact_modal') as HTMLFormElement).showModal();
                                         }
-                                    }} className="inline-block py-4 px-8 leading-none text-black hover:text-white bg-white bg-opacity-85 hover:bg-pink-600 rounded shadow text-sm font-bold"
+                                    }} className="inline-block py-4 px-8 leading-none bg-primary-blue hover:bg-primary-blue-hover text-white bg-opacity-85 rounded shadow text-sm font-bold"
                                 >Contact Me</button>
                             </div>
 
@@ -222,7 +222,7 @@ export default function HomePage() {
 
                     <div
                         ref={featuresRef}
-                        className="grid grid-cols-1 gap-24 lg:gap-36 text-white mt-12 place-content-center justify-items-center w-full">
+                        className="grid grid-cols-1 gap-12 text-white mt-12 place-content-center justify-items-center w-full">
                         <div ref={analysisref}></div>
                         <FeatureSection
                             image={creditAnalysisImage}
