@@ -222,7 +222,7 @@ export default function HomePage() {
 
                     <div
                         ref={featuresRef}
-                        className="grid grid-cols-1 gap-24 lg:gap-36 text-white mt-12 place-content-center justify-items-center w-full">
+                        className="grid grid-cols-1 gap-12 text-white mt-12 place-content-center justify-items-center w-full">
                         <div ref={analysisref}></div>
                         <FeatureSection
                             image={creditAnalysisImage}
