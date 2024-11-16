@@ -18,7 +18,7 @@ export default function ContactModal() {
     const [loading, setLoading] = useState(false);
     const [captchaPass, setCaptchaPass] = useState<boolean>();
 
-    //useEffect(() => emailjs.init(emailPubKey), []);
+    useEffect(() => emailjs.init(emailPubKey), []);
 
     async function onChange(value: any) {
         // verify captcha
@@ -67,17 +67,22 @@ export default function ContactModal() {
 
         } else {
             try {
+                console.log(`Sending... ${emailServiceId} | ${emailTemplateId} | ${data.message}`)
                 setLoading(true);
                 await emailjs.send(emailServiceId, emailTemplateId, {
                     from_name: data.name,
                     email: data.email,
                     message: data.message,
                 }).then(() => {
-                    console.log('sentQ!!!Q')
+                    console.log('sent!!!')
                     setShowSentMessage(true);
                     reset();
                     setCaptchaPass(false);
                     recaptcha?.current?.reset();
+
+                    // Close the modal
+                    const modal = document.getElementById('contact_modal') as HTMLDialogElement;
+                    modal?.close();
                 });
             } catch (error) {
                 //console.log(error);
@@ -128,12 +133,12 @@ export default function ContactModal() {
                                     onChange={onChange}
                                     data-size={'normal'}
                                 />
-                                <button type="submit" className="px-3 py-2 bg-button-primary-disabled bg-primary hover:bg-pink-600 text-slate-800 rounded-md">
+                                <button type="submit" className="px-3 py-2 bg-button-primary-disabled bg-primary-blue hover:bg-primary-blue-hover text-white rounded-md">
                                     <div className="flex flex-row justify-center items-center p-3 hover:text-white">
                                         {loading ? (
                                             <>
                                                 <LoadingCircles />
-                                                <div className="text-button-primary-txt-disabled">Submitting</div>
+                                                <div className="text-button-primary-txt-disabled">...Submitting</div>
                                             </>
                                         ) : (
                                             <div className="">
@@ -147,11 +152,9 @@ export default function ContactModal() {
                             </form>
                         </div>
                     </div>
-                    {showSentMessage ?
-                        (
-                            <ToastMessage position={ToastPosition.Bottom} message="Message Sent!" />
-                        ) :
-                        (<></>)}
+                    {showSentMessage && (
+                        <ToastMessage position={ToastPosition.Bottom} message="Message Sent!" />
+                    )}
                 </div>
             </dialog>
         </>

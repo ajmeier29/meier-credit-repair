@@ -132,6 +132,9 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                             </details>
                         </div> */}
                         <div className="ml-5">
+                            <a href="/Process">The Process</a>
+                        </div>
+                        <div className="ml-5">
                             <a href="/Pricing">Pricing</a>
                         </div>
                         <div className="ml-5">
