@@ -113,13 +113,32 @@ export default function ContactModal() {
                                     className={`w-3/4 md:w-[80%] px-3 py-2 outline-none cardShadow rounded-lg h-[51px] z-0 ${errors.name ? 'placeholder-red-400' : ''}`}
                                     placeholder={`${errors.email ? 'Full name is required' : 'Enter your full name'}`}
                                 />
-                                <input type="text"
-                                    {...register("email",
-                                        {
-                                            required: true
+                                <div className="w-3/4 md:w-[80%]">
+                                    <input
+                                        type="text"
+                                        {...register("email", {
+                                            required: "Email is required",
+                                            pattern: {
+                                                value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                                                message: "Not a valid email",
+                                            },
                                         })}
-                                    className={`w-3/4 md:w-[80%] px-3 py-2 outline-none cardShadow rounded-lg h-[51px] z-0 ${errors.email ? 'placeholder-red-400' : ''}`}
-                                    placeholder={`${errors.email ? 'Email is required' : 'Enter your email'}`} />
+                                        className={`px-3 py-2 outline-none cardShadow rounded-lg h-[51px] z-0 w-full ${errors.email ? 'placeholder-red-400 border-red-400' : ''
+                                            }`}
+                                        placeholder="Enter your email"
+                                    />
+                                    {errors.email && errors.email.type === "required" && (
+                                        <p className="text-red-500 text-sm mt-1">
+                                            {errors.email.message} {/* Shows "Email is required" */}
+                                        </p>
+                                    )}
+                                    {errors.email && errors.email.type === "pattern" && (
+                                        <p className="text-red-500 text-sm mt-1">
+                                            {errors.email.message} {/* Shows "Not a valid email" */}
+                                        </p>
+                                    )}
+                                </div>
+
                                 <textarea
                                     {...register("message", {
                                         required: true

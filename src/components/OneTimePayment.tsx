@@ -8,21 +8,22 @@ export default function OneTimePayment() {
         <>
 
             <div className="-mx-4 flex flex-wrap justify-center">
-                <OneTimePricingBox
+                {/* <OneTimePricingBox
                     title="Standard"
                     description="Perfect for disputing 1 collection, hard inquiries, and more."
-                    oneTimePayment="299"
+                    oneTimePayment="599"
                     amountOfDisputes="1"
                     isBankruptcy={false}
                     isCarRepo={false}
                     url="#"
                     buttonColor="bg-primary"
                     hoverColor="hover:bg-slate-200"
-                />
+                /> */}
                 <OneTimePricingBox
                     title="Premium"
+                    monthsSupport="6"
                     description="Perfect for clients who have bankruptcies and/or alot of items to dispute."
-                    oneTimePayment="399"
+                    oneTimePayment="699"
                     amountOfDisputes="5"
                     isBankruptcy={true}
                     isCarRepo={true}
@@ -32,14 +33,15 @@ export default function OneTimePayment() {
                 />
                 <OneTimePricingBox
                     title="Premium +"
+                    monthsSupport="9"
                     description="Ideal for clients with many negative items and who want constant removal."
-                    oneTimePayment="599"
+                    oneTimePayment="799"
                     amountOfDisputes="Unlimited"
                     isBankruptcy={true}
                     isCarRepo={true}
                     url="#"
-                    buttonColor="bg-primary"
-                    hoverColor="hover:bg-slate-200"
+                    buttonColor="primary-green"
+                    hoverColor="hover:bg-[#63d576]"
                 />
             </div>
         </>

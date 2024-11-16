@@ -13,9 +13,10 @@ type MonthlyPricingBoxProps =
         buttonColor: string;
         hoverColor: string;
         url: string;
+        monthsSupport: string;
     }
 
-export default function OneTimePricingBox({ title, description, oneTimePayment, amountOfDisputes, isCarRepo, isBankruptcy, url, hoverColor, buttonColor }: MonthlyPricingBoxProps) {
+export default function OneTimePricingBox({ title, description, oneTimePayment, amountOfDisputes, isCarRepo, isBankruptcy, url, hoverColor, buttonColor, monthsSupport }: MonthlyPricingBoxProps) {
     return (
         <>
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
@@ -37,6 +38,9 @@ export default function OneTimePricingBox({ title, description, oneTimePayment, 
                         {description}
                     </p>
                     <div className="mb-9 flex flex-col gap-[14px]">
+                        <p className="text-base text-body-color ">
+                            {monthsSupport} months of support.
+                        </p>
                         <p className="text-base text-body-color ">
                             Dispute All Hard Inquiries
                         </p>
