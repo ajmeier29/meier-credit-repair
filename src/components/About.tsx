@@ -54,15 +54,15 @@ export default function AboutPage() {
                                             My Story
                                         </h2>
                                         <p className="mt-4 text-gray-700 leading-relaxed">
-                                            Hello, I'm Andy! For the past 15 years, I’ve worked as a software
+                                            Hello, I'm Andy! For the past 15 years, I&#39;ve worked as a software
                                             developer, solving complex problems and building systems that
                                             make lives easier. Along the way, I realized that one of the
-                                            biggest challenges people face isn’t technological—it’s
+                                            biggest challenges people face isn&#39;t technological—it&#39;s
                                             financial. Specifically, the credit system.
                                         </p>
                                         <p className="mt-4 text-gray-700 leading-relaxed">
                                             I greatly dislike how predatory the credit system can be,
-                                            especially for those with subprime credit. That’s why I’m
+                                            especially for those with subprime credit. That&#39;s why I&#39;m
                                             committed to using my skills and knowledge to help others
                                             improve their credit scores and regain control of their
                                             financial futures.
