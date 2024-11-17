@@ -1,5 +1,6 @@
 import { title } from "process";
 import DisplayButtons from "./DisplayButtons";
+import ContactModal from "./ContactModal";
 
 
 type MonthlyPricingBoxProps =
@@ -19,9 +20,10 @@ type MonthlyPricingBoxProps =
 export default function OneTimePricingBox({ title, description, oneTimePayment, amountOfDisputes, isCarRepo, isBankruptcy, url, hoverColor, buttonColor, monthsSupport }: MonthlyPricingBoxProps) {
     return (
         <>
+            <ContactModal />
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
                 <div
-                    className="relative z-10 mb-10 max-sm:h-[850px] h-[800px] overflow-hidden rounded-[10px] border-2 border-stroke  bg-white  py-10 px-8 shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-[50px]"
+                    className="relative z-10 mb-10 max-sm:h-[850px] h-[770px] overflow-hidden rounded-[10px] border-2 border-stroke  bg-white  py-10 px-8 shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-[50px]"
                 >
                     <span className="mb-3 block text-lg font-semibold">
                         {title}
@@ -45,7 +47,7 @@ export default function OneTimePricingBox({ title, description, oneTimePayment, 
                             Dispute All Hard Inquiries
                         </p>
                         <p className="text-base text-body-color ">
-                            {amountOfDisputes} Collection Dispute&#40;s&#41;
+                            {amountOfDisputes} Collection Disputes
                         </p>
                         {isCarRepo ?
                             (
@@ -86,17 +88,16 @@ export default function OneTimePricingBox({ title, description, oneTimePayment, 
                         <p className="text-base text-body-color ">
                             Money Back Guarantee
                         </p>
-                        <p className="text-base text-body-color ">
-                            30 to 60min Zoom call each month to discuss our progress and check in on your credit habits.
-                        </p>
                     </div>
                     <div className={`absolute bottom-4 w-10/12 ${hoverColor} transition overflow-hidden rounded-md`}>
-                        <a
-                            href={url}
-                            className={`block w-full rounded-md border border-primary bg-${buttonColor} p-3 text-center text-base font-medium transition`}
-                        >
-                            Choose {title}
-                        </a>
+                        <button
+                            aria-label="Contact Me"
+                            onClick={() => {
+                                if (document) {
+                                    (document.getElementById('contact_modal') as HTMLFormElement).showModal();
+                                }
+                            }} className="w-full inline-block py-4 px-8 leading-none bg-primary-blue hover:bg-primary-blue-hover text-white bg-opacity-85 rounded shadow text-sm font-bold"
+                        >Contact Me</button>
                     </div>
                     <div>
                         <span className="absolute right-0 top-7 z-[-1]">
