@@ -9,19 +9,19 @@ export default function Monthly() {
         <>
 
             <div className="-mx-4 flex flex-wrap justify-center">
-                <MonthlyPricingBox
+                {/* <MonthlyPricingBox
                     title="Standard"
                     description="Perfect for disputing 1 collection, hard inquiries, and more."
                     enrollmentFee="99"
-                    monthlyRate="79"
+                    monthlyRate="95"
                     amountOfDisputes="1"
                     isBankruptcy={false}
                     isCarRepo={false}
                     url="#"
                     buttonColor="bg-primary"
                     hoverColor="hover:bg-slate-200"
-                />
-                <MonthlyPricingBox
+                /> */}
+                {/* <MonthlyPricingBox
                     title="Premium"
                     description="Perfect for clients who have bankruptcies and/or alot of items to dispute."
                     enrollmentFee="199"
@@ -32,12 +32,12 @@ export default function Monthly() {
                     url="#"
                     buttonColor="primary-green"
                     hoverColor="hover:bg-[#63d576]"
-                />
+                /> */}
                 <MonthlyPricingBox
                     title="Premium +"
                     description="Ideal for clients with many negative items and who want constant removal."
-                    enrollmentFee="299"
-                    monthlyRate="119"
+                    enrollmentFee="99"
+                    monthlyRate="95"
                     amountOfDisputes="Unlimited"
                     isBankruptcy={true}
                     isCarRepo={true}
