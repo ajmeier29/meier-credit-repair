@@ -17,9 +17,6 @@ export default function Footer() {
         <>
             <ContactModal />
             <section
-                data-aos="fade-up"
-                data-aos-delay="20"
-                data-aos-duration="100"
                 className="pt-16 mt-20">
                 <div className="relative mt-8 bg-footer-gradient pt-9">
                     <div className="mx-auto w-full h-full px-4 xl:px-0">
