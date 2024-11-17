@@ -66,7 +66,7 @@ export default function Process() {
                     </div>
 
 
-                    <div className='gradient-shadow rounded-lg container mx-auto'>
+                    <div className='mb:gradient-shadow rounded-lg container mx-auto'>
                         <div className="bg-white rounded-lg pt-7">
                             <ul className=" m-5 lg:m-8 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                                 <li>

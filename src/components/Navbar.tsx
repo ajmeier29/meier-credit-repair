@@ -63,7 +63,7 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                                 </li>
                                 <li
                                     className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear mt-3">
-                                    <a href="#">About</a>
+                                    <a href="/About">About</a>
                                 </li>
                                 <li
                                     className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear mt-3">
@@ -141,7 +141,7 @@ export default function Navbar({ marginTop = 'mt-20' }: NavBarProps) {
                             <a href="/blogposts">Blog</a>
                         </div>
                         <div className="ml-5">
-                            <a href="#">About</a>
+                            <a href="/About">About</a>
                         </div>
                         <div onClick={() => {
                             if (document) {
