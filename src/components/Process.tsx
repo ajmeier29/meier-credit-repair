@@ -176,7 +176,7 @@ export default function Process() {
                                         <time className="font-mono italic">Round 2</time>
                                         <div className="text-lg font-black">Second Round of Letters</div>
                                         After the first round is completed, any left over negative items and hard inquries will be disputed
-                                        and set out to all 3 bureaus. Typically, after 2+ rounds they we can expect more things to fall off
+                                        and set out to all 3 bureaus. Typically, after 2+ rounds you can expect more things to fall off
                                         of your report. (although not guaranteed)
                                     </div>
                                 </li>

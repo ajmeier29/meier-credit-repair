@@ -66,7 +66,7 @@ export default function HomePage() {
                         <div className="grid grid-cols-1 text-white place-content-center justify-items-center w-full">
                             <h1 className="text-[25px] md:text-4xl font-bold mt-10 mb-6 max-sm:px-5">I will dispute and remove <br /> <span ref={typedRef} /></h1>
                             <p className="px-4 text-lg md:w-3/4 leading-relaxed">
-                                The credit bureaus are incentivized to keep your credit score low. Take control of your credit score today! Contact me and lets setup a consultation to understand how I can help raise your score in 30 to 60 days.
+                                The credit bureaus are incentivized to keep your credit score low. Take control of your credit score today! Contact me and lets set up a consultation to understand how I can help raise your score in 30 to 60 days.
                             </p>
 
                             <div className="mt-4">
