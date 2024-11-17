@@ -54,7 +54,7 @@ export default function AboutPage() {
                                             My Story
                                         </h2>
                                         <p className="mt-4 text-gray-700 leading-relaxed">
-                                            Hello, I'm Andy! For the past 15 years, I&#39;ve worked as a software
+                                            Hello, I&#39;m Andy! For the past 15 years, I&#39;ve worked as a software
                                             developer, solving complex problems and building systems that
                                             make lives easier. Along the way, I realized that one of the
                                             biggest challenges people face isn&#39;t technological—it&#39;s
