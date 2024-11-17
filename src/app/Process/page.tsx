@@ -6,7 +6,7 @@ import Process from "@/components/Process";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'THe Process',
+    title: 'The Process',
 };
 
 export default async function Page() {
