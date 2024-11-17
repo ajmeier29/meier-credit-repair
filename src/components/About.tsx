@@ -13,7 +13,7 @@ export default function AboutPage() {
                 data-aos="fade-up"
                 data-aos-delay="50"
                 data-aos-duration="500"
-                className="h-[700px] md:h-[750px] w-full -mt-20 md:-mt-24 overscroll-none hero-border-radius bg-hero-gradient-background mb-[900px] md:mb-[1350px] lg:mb-[400px] ">
+                className="h-[700px] md:h-[750px] w-full -mt-20 md:-mt-24 overscroll-none hero-border-radius bg-hero-gradient-background mb-[900px] md:mb-[250px]">
                 <section
                     className=" z-10 overflow-hidden dark:bg-dark pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] mb-20"
                 >
