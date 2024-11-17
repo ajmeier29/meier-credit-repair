@@ -136,7 +136,7 @@
     /* control the offsets */
     z-index: -1; /* place the element behind */
     background: linear-gradient(20deg, var(--light-primary-one), var(--light-primary-two)); /* your gradient here */
-    filter: blur(18px); /* control the blur */
+    filter: blur(22px); /* control the blur */
 }
 
 .tab-container {

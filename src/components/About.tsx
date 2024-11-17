@@ -18,7 +18,7 @@ export default function AboutPage() {
                     className=" z-10 overflow-hidden dark:bg-dark pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] mb-20"
                 >
                     <div className="min-h-screen py-10 px-4 sm:px-6 lg:px-8">
-                        <div className="bg-white md:gradient-shadow max-w-4xl mx-auto shadow-lg rounded-lg">
+                        <div className="bg-white gradient-shadow max-w-4xl mx-auto shadow-lg rounded-lg">
                             <div className="p-6 sm:p-10">
                                 {/* Header Section */}
                                 <div className="text-center">
