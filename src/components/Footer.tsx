@@ -53,7 +53,7 @@ export default function Footer() {
                                         </svg>
                                     </div>
                                     <div className="ml-[18px]">
-                                        <a href="tel:610-390-5742" className="font-Inter text-[14px] font-medium text-white">+1 610-390-5742</a>
+                                        <a href="tel:6103905742" className="font-Inter text-[14px] font-medium text-white">+1 610-390-5742</a>
                                         <p className="font-Inter text-[12px] font-medium text-white">Phone Number</p>
                                     </div>
                                 </div>
