@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Success',
+    title: 'About',
 };
 
 export default async function Page() {
