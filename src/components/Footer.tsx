@@ -3,6 +3,7 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import Link from 'next/link';
 import { useEffect } from 'react';
+import ContactModal from './ContactModal';
 
 export default function Footer() {
     const schedulelUrl = process?.env?.NEXT_PUBLIC_SCHEDULE_URL ?? '';
@@ -14,10 +15,11 @@ export default function Footer() {
 
     return (
         <>
+            <ContactModal />
             <section
                 data-aos="fade-up"
-                data-aos-delay="50"
-                data-aos-duration="500"
+                data-aos-delay="20"
+                data-aos-duration="100"
                 className="pt-16 mt-20">
                 <div className="relative mt-8 bg-footer-gradient pt-9">
                     <div className="mx-auto w-full h-full px-4 xl:px-0">
@@ -96,21 +98,20 @@ export default function Footer() {
                                                 href="/Pricing">Pricing</a></li>
                                             <li className="mt-[15px]"><a
                                                 className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                                href="#">About</a></li>
+                                                href="/About">About</a></li>
                                         </ul>
                                         <ul>
                                             <li className="mt-[15px]"><a
                                                 className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
                                                 href="/Process">The Process</a></li>
-                                            <li className="mt-[15px]"><Link
-                                                onClick={(e) => {
+                                            <li className="mt-[15px]">
+                                                <a onClick={(e) => {
                                                     if (document) {
                                                         e.preventDefault();
                                                         (document.getElementById('contact_modal') as HTMLFormElement).showModal();
                                                     }
-                                                }}
-                                                className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                                href="#">Contact</Link></li>
+                                                }} href="#">Contact</a>
+                                            </li>
                                             <li className="mt-[15px]"><Link
                                                 className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
                                                 href="/privacy-policy">Privcay policy</Link></li>
