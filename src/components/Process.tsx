@@ -45,7 +45,7 @@ export default function Process() {
                 data-aos-duration="500"
                 className="h-[700px] md:h-[750px] w-full -mt-20 md:-mt-24 overscroll-none hero-border-radius bg-hero-gradient-background mb-[2700px] md:mb-[3000px] lg:mb-[4000px] ">
                 <section
-                    className=" z-10 overflow-hidden max-sm:ml-5 max-sm:mr-5 dark:bg-dark pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] mb-20"
+                    className=" z-10 overflow-hidden max-sm:ml-2 max-sm:mr-2 dark:bg-dark pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] mb-20"
                 >
                     <div className="container mx-auto">
                         <div className="-mx-4 flex flex-wrap">
@@ -66,9 +66,9 @@ export default function Process() {
                     </div>
 
 
-                    <div className='mb:gradient-shadow rounded-lg container mx-auto'>
+                    <div className='rounded-lg container mx-auto'>
                         <div className="bg-white rounded-lg pt-7">
-                            <ul className=" m-5 lg:m-8 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+                            <ul className="m-5 lg:m-8 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                                 <li>
                                     <div className="timeline-middle">
                                         <TimelineIcon />
