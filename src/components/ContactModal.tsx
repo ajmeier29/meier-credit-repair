@@ -103,6 +103,10 @@ export default function ContactModal() {
                         </form>
                         <h1 className="text-2xl text-center mt-10">
                             Contact Me for <br />a Free Consultation
+                            <br />
+                            Text: <a href="tel:6103905742" className="text-lg">610-390-5742</a>
+                            <br />
+                            <a href="mailto:andrew.meier@themoneymentor.app" className="text-lg">andrew.meier@themoneymentor.app</a>
                         </h1>
                         <div>
                             <form className="grid grid-cols-1 gap-2 justify-items-center mt-5" onSubmit={handleSubmit(onSubmit)}>
