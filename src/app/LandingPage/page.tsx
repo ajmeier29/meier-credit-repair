@@ -1,13 +1,11 @@
-'use client'
+'use client';
+
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import AboutPage from "@/components/About";
 import CalendlyModal from "@/components/CalendlyEmbedded";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { track } from "@vercel/analytics";
-
-import { Metadata } from "next";
 
 export default function Page() {
     const searchParams = useSearchParams();
