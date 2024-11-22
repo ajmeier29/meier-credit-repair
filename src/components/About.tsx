@@ -1,7 +1,7 @@
 'use client'
 
 import andrewAndMilo from '../../public/images/andrewAndMilo.jpg';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 
 
 export default function AboutPage() {
