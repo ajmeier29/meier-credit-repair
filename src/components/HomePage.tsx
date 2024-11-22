@@ -170,14 +170,14 @@ export default function HomePage() {
                                     </button>
                                 </div>
                             </div>
-                            <div className="text-black mt-6">
+                            {/* <div className="text-black mt-6">
                                 More Information
-                            </div>
+                            </div> */}
                             <button onClick={() => {
                                 featuresRef.current?.scrollIntoView({
                                     behavior: 'smooth'
                                 });
-                            }} className="mt-1">
+                            }} className="mt-10">
                                 <svg className="h-8 w-8 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">  <polyline points="6 9 12 15 18 9" /></svg>
                             </button>
                         </div>

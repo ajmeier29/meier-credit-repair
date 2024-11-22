@@ -2,12 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import CalendlyModal from "@/components/CalendlyEmbedded";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import { track } from "@vercel/analytics";
+import HomePage from "./HomePage";
 
-export default function LandingPageContent() {
+export default function LandingPage() {
     const searchParams = useSearchParams();
     const [source, setSource] = useState<string | null>(null);
 
@@ -27,15 +25,7 @@ export default function LandingPageContent() {
 
     return (
         <>
-            <div className="p-4 text-center mb-[1000px]">
-                {source ? (
-                    <p className="text-lg font-semibold text-white">
-                        Scanned from source: <span className="text-orange-400">{source}</span>
-                    </p>
-                ) : (
-                    <p className="text-lg">No source detected</p>
-                )}
-            </div>
+            <HomePage />
         </>
     );
 }
