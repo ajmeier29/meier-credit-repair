@@ -38,7 +38,6 @@ export default function Process() {
 
     return (
         <>
-
             <div
                 data-aos="fade-up"
                 data-aos-delay="50"
@@ -47,6 +46,7 @@ export default function Process() {
                 <section
                     className=" z-10 overflow-hidden max-sm:ml-2 max-sm:mr-2 dark:bg-dark pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] mb-20"
                 >
+
                     <div className="container mx-auto">
                         <div className="-mx-4 flex flex-wrap">
                             <div className="w-full px-4">
@@ -64,6 +64,82 @@ export default function Process() {
                         </div>
 
                     </div>
+
+                    <div className="card bg-base-100 md:w-96 h-[500px] shadow-xl mx-auto">
+                        <figure>
+                            {/* Replace the image with the embedded YouTube iframe */}
+                            <iframe
+                                width="100%"
+                                height="315"
+                                src="https://www.youtube.com/embed/El9oZP_W0Iw"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                loading="lazy"
+                            ></iframe>
+                        </figure>
+                        <div className="card-body">
+                            <h2 className="card-title">Welcome!</h2>
+                            <p>Explanation of the process and setting expecations.</p>
+                            {/* <div className="card-actions justify-end">
+                                <button className="btn btn-primary">Buy Now</button>
+                            </div> */}
+                        </div>
+                    </div>
+
+                    <div className="mt-5 flex flex-col md:flex-row justify-center items-center max-md:space-y-5 md:space-x-5">
+                        <div className="card bg-base-100 md:w-96 h-[500px] shadow-xl">
+                            <figure>
+                                {/* Replace the image with the embedded YouTube iframe */}
+                                <iframe
+                                    width="100%"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/El9oZP_W0Iw"
+                                    title="YouTube video player"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    loading="lazy"
+                                ></iframe>
+                            </figure>
+                            <div className="card-body">
+                                <h2 className="card-title">How to sign up for MyScoreIQ</h2>
+                                <p>You will need to sign up for MyScoreIQ in order for me to analyze your reports. You can get it cheaper using this link.</p>
+                                {/* <div className="card-actions justify-end">
+                                <button className="btn btn-primary">Buy Now</button>
+                            </div> */}
+                            </div>
+                        </div>
+                        {/* <div className="divider lg:divider-horizontal">
+
+                        </div> */}
+
+                        <div className="card bg-base-100 md:w-96 h-[500px] shadow-xl">
+                            <figure>
+                                {/* Replace the image with the embedded YouTube iframe */}
+                                <iframe
+                                    width="100%"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/El9oZP_W0Iw"
+                                    title="YouTube video player"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    loading="lazy"
+                                ></iframe>
+                            </figure>
+                            <div className="card-body">
+                                <h2 className="card-title">Portal and CFPB</h2>
+                                <p>I show you the web portal you will be given as well as signing up for the CFPB. I use the CFPB to dispute for you!</p>
+                                {/* <div className="card-actions justify-end">
+                                <button className="btn btn-primary">Buy Now</button>
+                            </div> */}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="divider mt-10 mx-4 md:mx-32"></div>
 
 
                     <div className='rounded-lg container mx-auto'>
