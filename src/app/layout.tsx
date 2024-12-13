@@ -23,11 +23,12 @@ export default function RootLayout({
       <head>
         {/* Google Tag Manager - Global Site Tag (gtag.js) */}
         <Script
-          id="google-tag-script"
+          id="google-tag-script-1"
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=AW-11493364200"
         />
         <Script
+          id="google-tag-script-2"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
