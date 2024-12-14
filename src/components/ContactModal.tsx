@@ -125,10 +125,10 @@ export default function ContactModal() {
                                     {...register("name", {
                                         required: true
                                     })}
-                                    className={`w-3/4 md:w-[80%] px-3 py-2 outline-none cardShadow rounded-lg h-[51px] z-0 ${errors.name ? 'placeholder-red-400' : ''}`}
+                                    className={`w-11/12 md:w-[80%] px-3 py-2 outline-none cardShadow rounded-lg h-[51px] z-0 ${errors.name ? 'placeholder-red-400' : ''}`}
                                     placeholder={`${errors.email ? 'Full name is required' : 'Enter your full name'}`}
                                 />
-                                <div className="w-3/4 md:w-[80%]">
+                                <div className="w-11/12 md:w-[80%]">
                                     <input
                                         type="text"
                                         {...register("email", {
@@ -155,7 +155,7 @@ export default function ContactModal() {
                                 </div>
 
                                 {/* Current Credit Score */}
-                                <div className="mb-4 w-3/4 md:w-[80%]">
+                                <div className="mb-4 w-11/12 md:w-[80%]">
                                     <label htmlFor="creditScore" className="block text-sm font-medium text-gray-700">
                                         Select Your Current Credit Score
                                     </label>
@@ -184,7 +184,7 @@ export default function ContactModal() {
                                     {...register("message", {
                                         required: true
                                     })}
-                                    className={`w-3/4 md:w-[80%] px-3 py-2 outline-none cardShadow rounded-lg z-0 h-28 ${errors.message ? 'placeholder-red-400' : ''}`}
+                                    className={`w-11/12 md:w-[80%] px-3 py-2 outline-none cardShadow rounded-lg z-0 h-28 ${errors.message ? 'placeholder-red-400' : ''}`}
                                     placeholder={`${errors.message ? 'Message is required' : 'What are you inquiring about?'}`}
                                 />
                                 <ReCAPTCHA
