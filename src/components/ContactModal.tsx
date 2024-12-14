@@ -5,6 +5,8 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { SubmitHandler, useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import ToastMessage, { ToastPosition } from "./ToastMessage";
+import { track } from '@vercel/analytics';
+import GoogleAdsConversionTrackerProps from "./GoogleAdsConversionTrackerProps";
 
 
 export default function ContactModal() {
@@ -68,6 +70,7 @@ export default function ContactModal() {
         } else {
             try {
                 console.log(`Sending... ${emailServiceId} | ${emailTemplateId} | ${data.message}`)
+                track('contact_modal_submit');
                 setLoading(true);
                 await emailjs.send(emailServiceId, emailTemplateId, {
                     from_name: data.name,
@@ -79,6 +82,8 @@ export default function ContactModal() {
                     reset();
                     setCaptchaPass(false);
                     recaptcha?.current?.reset();
+
+                    <GoogleAdsConversionTrackerProps currency="USD" eventId="CwP0CPe0y_cZEOiju-gq" value={1.0} />
 
                     // Close the modal
                     const modal = document.getElementById('contact_modal') as HTMLDialogElement;
