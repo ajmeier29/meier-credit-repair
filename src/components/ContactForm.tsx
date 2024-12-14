@@ -173,6 +173,7 @@ const ContactForm: React.FC = () => {
                         )}
                     </div>
 
+                    {/* Current Credit Score */}
                     <div className="mb-4">
                         <label htmlFor="creditScore" className="block text-sm font-medium text-gray-700">
                             Select Your Current Credit Score
