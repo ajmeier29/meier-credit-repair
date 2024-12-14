@@ -1,10 +1,19 @@
 'use client'
 
 import andrewAndMilo from '../../public/images/andrewAndMilo.jpg';
+import linkedInImage from '../../public/images/In-Blue-72.png';
+import gitHubImage from '../../public/images/github-mark.png';
 import Image from 'next/image';
+import { PreloadStaticImage } from './PreloadImage';
+import { track } from '@vercel/analytics';
 
 
 export default function AboutPage() {
+
+    // Tracking function for link clicks
+    const handleLinkClick = (platform: string) => {
+        track(`click-${platform}`); // You can track each button click individually
+    };
 
     return (
         <>
@@ -67,6 +76,29 @@ export default function AboutPage() {
                                             improve their credit scores and regain control of their
                                             financial futures.
                                         </p>
+
+                                        {/* LinkedIn and GitHub Section */}
+                                        <div className="mt-5 text-center">
+                                            <h2 className="text-2xl font-semibold text-gray-800">
+                                                Connect with Me
+                                            </h2>
+                                            <div className="flex justify-center gap-6 mt-4">
+                                                <a href="https://www.linkedin.com/in/andrew-joseph-meier/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    onClick={() => handleLinkClick('linkedin-inquire')} // Tracking click on LinkedIn
+                                                >
+                                                    <PreloadStaticImage imgSrc={linkedInImage} styleProps={'w-10 h-10'} />
+                                                </a>
+                                                <a href="https://github.com/ajmeier29"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    onClick={() => handleLinkClick('github-inquire')} // Tracking click on LinkedIn
+                                                >
+                                                    <PreloadStaticImage imgSrc={gitHubImage} styleProps={'w-10 h-10'} />
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
