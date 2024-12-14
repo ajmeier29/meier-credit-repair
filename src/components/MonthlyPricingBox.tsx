@@ -94,13 +94,13 @@ export default function MonthlyPricingBox({ title, description, enrollmentFee, m
                     </div>
                     <div className={`absolute bottom-4 w-10/12 ${hoverColor} transition overflow-hidden rounded-md`}>
                         <button
-                            aria-label="Contact Me"
+                            aria-label="Contact Us"
                             onClick={() => {
                                 if (document) {
                                     (document.getElementById('contact_modal') as HTMLFormElement).showModal();
                                 }
                             }} className="w-full inline-block py-4 px-8 leading-none bg-primary-blue hover:bg-primary-blue-hover text-white bg-opacity-85 rounded shadow text-sm font-bold"
-                        >Contact Me</button>
+                        >Contact Us</button>
                     </div>
                     <div>
                         <span className="absolute right-0 top-7 z-[-1]">

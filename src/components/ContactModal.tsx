@@ -113,7 +113,7 @@ export default function ContactModal() {
                             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                         </form>
                         <h1 className="text-2xl text-center mt-10">
-                            Contact Me for <br />a Free Consultation
+                            Contact Us for <br />a Free Consultation
                             <br />
                             Text: <a href="tel:6103905742" className="text-lg">610-390-5742</a>
                             <br />

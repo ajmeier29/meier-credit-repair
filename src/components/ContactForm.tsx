@@ -109,7 +109,7 @@ const ContactForm: React.FC = () => {
 
     return (
         <div className="w-full">
-            {/* Contact Me Button */}
+            {/* Contact Us Button */}
             <button
                 onClick={() => {
                     setIsOpen(!isOpen);
@@ -118,7 +118,7 @@ const ContactForm: React.FC = () => {
                 }}
                 className="btn inline-block py-4 px-8 leading-none bg-primary-blue hover:bg-primary-blue-hover text-white bg-opacity-85 rounded shadow text-sm font-bold"
             >
-                Contact Me
+                Contact Us
             </button>
 
             {/* Sliding Form */}

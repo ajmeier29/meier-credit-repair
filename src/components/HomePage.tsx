@@ -72,7 +72,7 @@ export default function HomePage() {
 
                             {/* <div className="mt-4">
                                 <button
-                                    aria-label="Contact Me"
+                                    aria-label="Contact Us"
                                     onClick={() => {
                                         if (document) {
                                             (document.getElementById('contact_modal') as HTMLFormElement).showModal();
