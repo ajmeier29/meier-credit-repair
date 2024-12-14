@@ -54,7 +54,8 @@ export default function ContactModal() {
         {
             name: string,
             email: string,
-            message: string
+            message: string,
+            creditScore: string;
         }
 
     const {
@@ -62,7 +63,11 @@ export default function ContactModal() {
         reset,
         handleSubmit,
         formState: { errors },
-    } = useForm<FormData>()
+    } = useForm<FormData>({
+        defaultValues: {
+            creditScore: "", // Default to the placeholder option
+        },
+    });
 
     const onSubmit: SubmitHandler<FormData> = async (data) => {
         if (!captchaPass) {
@@ -76,6 +81,7 @@ export default function ContactModal() {
                     from_name: data.name,
                     email: data.email,
                     message: data.message,
+                    creditScore: data.creditScore
                 }).then(() => {
                     console.log('sent!!!')
                     setShowSentMessage(true);
@@ -144,6 +150,32 @@ export default function ContactModal() {
                                     {errors.email && errors.email.type === "pattern" && (
                                         <p className="text-red-500 text-sm mt-1">
                                             {errors.email.message} {/* Shows "Not a valid email" */}
+                                        </p>
+                                    )}
+                                </div>
+
+                                {/* Current Credit Score */}
+                                <div className="mb-4 w-3/4 md:w-[80%]">
+                                    <label htmlFor="creditScore" className="block text-sm font-medium text-gray-700">
+                                        Select Your Current Credit Score
+                                    </label>
+                                    <select
+                                        id="creditScore"
+                                        {...register("creditScore", { required: "Credit score is required" })}
+                                        className="select select-bordered w-full mt-1"
+                                    >
+                                        <option value="" disabled>Select your credit score range</option>
+                                        <option value="not-sure">I&apos;m Not Sure.</option>
+                                        <option value="300-499">300-499 (Poor)</option>
+                                        <option value="500-599">500-599 (Bad)</option>
+                                        <option value="600-649">600-649 (Fair)</option>
+                                        <option value="650-699">650-699 (Good)</option>
+                                        <option value="700-749">700-749 (Very Good)</option>
+                                        <option value="750-850">750-850 (Excellent)</option>
+                                    </select>
+                                    {errors.creditScore && (
+                                        <p className="text-red-500 text-sm mt-1">
+                                            {errors.creditScore.message}
                                         </p>
                                     )}
                                 </div>
