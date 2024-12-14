@@ -183,7 +183,7 @@ const ContactForm: React.FC = () => {
                             className="select select-bordered w-full mt-1"
                         >
                             <option value="" disabled>Select your credit score range</option>
-                            <option value="not-sure">I'm Not Sure.</option>
+                            <option value="not-sure">I&apos;m Not Sure.</option>
                             <option value="300-499">300-499 (Poor)</option>
                             <option value="500-599">500-599 (Bad)</option>
                             <option value="600-649">600-649 (Fair)</option>
