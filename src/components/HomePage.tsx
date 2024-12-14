@@ -15,12 +15,13 @@ import ongoingEducationImage from '../../public/images/creditEducation.webp';
 
 // libs
 import { PreloadStaticImage } from "./PreloadImage";
-import ContactModal from "./ContactModal";
+// import ContactModal from "./ContactModal";
 import Typed from 'typed.js';
 import { MutableRefObject, useEffect, useRef } from 'react';
 import { StaticImageData } from "next/image";
 import FeatureSection from "./FeatureSection";
 import CalendlyModal from "./CalendlyEmbedded";
+import ContactForm from './ContactForm';
 
 
 export default function HomePage() {
@@ -57,7 +58,7 @@ export default function HomePage() {
 
     return (
         <>
-            <ContactModal />
+            {/* <ContactModal /> */}
             <div className="relative justify-center items-center -mt-12 md:-mt-32 drop-shadow-1xl block">
                 {/* <PreloadStaticImage imgSrc={mainWorkoutImage} styleProps={'h-[700px] w-full diagonal-cut-mobile  relative'} /> */}
                 <div className="grid grid-cols-1 h-full mt-10">
@@ -69,7 +70,7 @@ export default function HomePage() {
                                 The credit bureaus are incentivized to keep your credit score low. Take control of your credit score today! Contact me and lets set up a consultation to understand how I can help raise your score in 30 to 60 days.
                             </p>
 
-                            <div className="mt-4">
+                            {/* <div className="mt-4">
                                 <button
                                     aria-label="Contact Me"
                                     onClick={() => {
@@ -78,6 +79,9 @@ export default function HomePage() {
                                         }
                                     }} className="inline-block py-4 px-8 leading-none bg-primary-blue hover:bg-primary-blue-hover text-white bg-opacity-85 rounded shadow text-sm font-bold"
                                 >Contact Me</button>
+                            </div> */}
+                            <div className='mt-3 w-11/12 mb:w-2/3'>
+                                <ContactForm />
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center w-3/4 md:w-[90%] lg:w-[130%] text-black gap-4 mt-6">
